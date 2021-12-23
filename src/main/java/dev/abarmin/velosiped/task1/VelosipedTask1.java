@@ -1,5 +1,7 @@
 package dev.abarmin.velosiped.task1;
 
+import java.io.IOException;
+
 /**
  * Task 1 - GET some.
  *
@@ -22,7 +24,7 @@ public interface VelosipedTask1 {
    *
    * @param port number
    */
-  void startServer(int port);
+  void startServer(int port) throws IOException;
 
   /**
    * Stop a started server.

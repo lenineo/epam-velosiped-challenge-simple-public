@@ -3,6 +3,7 @@ package dev.abarmin.velosiped.task1;
 import dev.abarmin.velosiped.helper.VelosipedHelper;
 import dev.abarmin.velosiped.task1.VelosipedTask1;
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
@@ -20,7 +21,7 @@ class VelosipedTask1Test {
   private VelosipedTask1 uut = VelosipedHelper.getInstance(VelosipedTask1.class);
 
   @BeforeEach
-  void setUp() {
+  void setUp() throws IOException {
     uut.startServer(1234);
   }
 
